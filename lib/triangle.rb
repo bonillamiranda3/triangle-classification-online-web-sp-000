@@ -1,17 +1,17 @@
 class Triangle
 
-  attr_reader :sides
+  attr_reader :triangle
   def initialize(side1, side2, side3)
-    @sides = [side1, side2, side3].sort
+    @trianlge = [side1, side2, side3].sort
   end
 
   class TriangleError < StandardError
   end
 
   def kind
-    raise TriangleError if sides[0] <= 0 or sides[0] + sides[1] <= sides[2]
+    raise TriangleError if triangle[0] <= 0 or triangle[0] + triangle[1] <= triangle[2]
 
-    case @sides.uniq.count
+    case @triangle.uniq.count
     when 1
       return :equilateral
     when 2
