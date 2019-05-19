@@ -3,7 +3,7 @@ class Triangle
   attr_accessor :triangle
 
   def initialize(side_a, side_b, side_c)
-    @triangle = [side_a, side_b, side_c]
+    @triangle = [side_a, side_b, side_c].sort
   end
 
     def triangle
