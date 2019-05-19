@@ -2,7 +2,7 @@ class Triangle
 
   attr_reader :triangle
   def initialize(side1, side2, side3)
-    @trianlge = [side1, side2, side3].sort
+    @triangle = [side1, side2, side3].sort
   end
 
   class TriangleError < StandardError
